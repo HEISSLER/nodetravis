@@ -1,5 +1,3 @@
-/*eslint-env node-update*/
-
 //------------------------------------------------------------------------------
 // node.js starter application for Bluemix
 //------------------------------------------------------------------------------
@@ -19,10 +17,6 @@ var app = express();
 //app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
   res.send('hello world')
-})
-
-app.get('/hello', function (req, res) {
-  res.send('hello hello')
 })
 
 app.get(express.static(__dirname + '/public'));
